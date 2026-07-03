@@ -19,7 +19,7 @@ df = pd.read_csv(url)
   - IMF API에서 국가 목록 또는 지역 목록을 조회한다.
   - GDP 지표와 국가 코드를 조합해 국가별 GDP 데이터를 요청한다.
   - 응답 JSON 데이터를 pandas DataFrame으로 변환한다.
-  - 기존 Transform 단계에서 단위 변환, 정렬, 필터링을 수행한다.)
+  - 기존 Transform 단계에서 단위 변환, 정렬, 필터링을 수행한다.
 ```
 url = 'https://www.imf.org/external/datamapper/api/v1/NGDPD'
 response = requests.get(url)
