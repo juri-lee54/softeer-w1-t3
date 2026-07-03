@@ -29,8 +29,7 @@ data = response.json()  # JSON 형태로 GDP 데이터를 받아옴
 - Wikipedia 스크래핑과 비교했을 때 장단점은 다음과 같다.
 <img width="350" height="200" alt="image" src="https://github.com/user-attachments/assets/1a54a133-887a-4e0a-839b-064eb3bb8c36" />
 
-- IMF API를 사용하는 방식은 
-- 데이터 원출처에서 직접 가져오기 때문에 신뢰성이 높고, HTML 구조 변경에 덜 영향을 받는다는 점이다.
+- 데이터 원출처에서 직접 가져오기 때문에 신뢰성이 높고, HTML 구조 변경에 영향을 받지 않는다.
 - API 응답에는 연도, 국가 코드, 지표 코드 같은 메타데이터가 포함될 수 있어 데이터 관리와 재사용에도 더 적합하다.
 - 단, IMF에서 직접 가져오면 국가명이 IMF 고유 표기 방식(예: “Taiwan Province of China”)으로 되어 있어서 별도 정제가 필요하다.
 
