@@ -1,0 +1,4 @@
+missions/w2/crawler/data/
+venv/
+__pycache__/
+*.pyc
