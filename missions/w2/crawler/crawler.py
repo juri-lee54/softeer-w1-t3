@@ -157,9 +157,9 @@ def setup_logger():
     logger.addHandler(file_handler)
 
 
-def run_crawler(app_id, review_type, output_file):
+def run_crawler(app_id, review_type, output_file, target_reviews=2000):
     setup_logger()
-    crawler = SteamReviewCrawler(app_id=app_id, review_type=review_type, target_reviews=2000)
+    crawler = SteamReviewCrawler(app_id=app_id, review_type=review_type, target_reviews=target_reviews)
     handler = JsonHandler(output_file)
     
     try:
